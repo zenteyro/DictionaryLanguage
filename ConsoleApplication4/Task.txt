@@ -1,0 +1,30 @@
+﻿Дані зберігаються в форматі XML:
+
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration> 
+  <section leng="ua"> 
+    <menuOpenWinIndex>Відкрити</menuOpenWinIndex> 
+    <menuSaveWinIndex>Зберегти</menuSaveWinIndex> 
+    <menuCloseWinIndex>Закрити</menuCloseWinIndex> 
+  </section> 
+  <section leng="ru"> 
+    <menuOpenWinIndex>Открыть</menuOpenWinIndex> 
+    <menuSaveWinIndex>Сохранить</menuSaveWinIndex> 
+    <menuCloseWinIndex>Закрыть</menuCloseWinIndex> 
+  </section> 
+  <section leng="en"> 
+    <menuOpenWinIndex>Open</menuOpenWinIndex> 
+    <menuSaveWinIndex>Save</menuSaveWinIndex> 
+    <menuCloseWinIndex>Close</menuCloseWinIndex> 
+  </section>
+  <section leng="de">
+    <menuOpenWinIndex>Öffnen</menuOpenWinIndex>
+    <menuSaveWinIndex>sparen</menuSaveWinIndex>
+    <menuCloseWinIndex>Schließen</menuCloseWinIndex>
+  </section>
+</configuration>
+
+Необхідно зробити сінгелтоновський обект з масивом обєктів щоб можна було звернутись до кожного за назвою і витягнути текст,
+наприклад LengDictionary.menuOpenWinIndex.text 
+
+Також необхідно реалізувати переключення мов і щоб витягувався необхідний набір даних
