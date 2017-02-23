@@ -13,8 +13,11 @@ namespace ConsoleApplication4
     {
         static void Main(string[] args)
         {
-            Menu.SetLanguage("ru");
+            Menu.Language = "en";
             Console.WriteLine(Menu.GetParamText("menuOpenWinIndex"));
+
+            Dictionary<string, string> myDic = Menu.DisplayContent();
+            
         }
     }
 }
